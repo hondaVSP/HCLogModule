@@ -1,0 +1,6 @@
+framework module HCLogModule {
+  umbrella header "HCLogModule-umbrella.h"
+
+  export *
+  module * { export * }
+}
