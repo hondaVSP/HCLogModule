@@ -35,6 +35,11 @@ Pod::Spec.new do |s|
   # s.requires_arc   = true
   # s.static_framework = true
   s.vendored_frameworks = 'HCLogModule.framework'
+  s.pod_target_xcconfig = {
+    'OTHER_LDFLAGS' => '-lObjC',
+    'VALID_ARCHS' => 'x86_64 armv7 arm64'
+  }
+
   s.dependency 'CocoaLumberjack'
   
 
